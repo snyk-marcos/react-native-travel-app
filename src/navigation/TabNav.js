@@ -22,19 +22,19 @@ function TabNav(){
         initialRouteName='Home'
         screenOptions={({ route }) => ({
             headerShown: false,
-            tabBarStyle: {elevation: 0, borderTopWidth: 0},
+            tabBarStyle: {elevation: 0, borderTopWidth: 0, backgroundColor: 'black'},
             tabBarIcon: ({ focused, iconColor, iconName }) => {
                 if (route.name === 'Home'){
-                    iconColor = focused ? '#3a86fe' : 'black'
+                    iconColor = focused ? '#3a86fe' : 'white'
                     iconName = 'home'
                 } else if (route.name === 'Directions'){
-                    iconColor = focused ? '#3a86fe' : 'black'
+                    iconColor = focused ? '#3a86fe' : 'white'
                     iconName = 'compass'
                 } else if (route.name === 'Bookmarks'){
-                    iconColor = focused ? '#3a86fe' : 'black'
+                    iconColor = focused ? '#3a86fe' : 'white'
                     iconName = 'bookmark'
                 } else {
-                    iconColor = focused ? '#3a86fe' : 'black'
+                    iconColor = focused ? '#3a86fe' : 'white'
                     iconName = 'user'
                 }
                 return <Icon name={iconName} size={25} color={iconColor} />;

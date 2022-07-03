@@ -22,11 +22,11 @@ const Card = ({ img, locName, rating, location }) => {
         </View>
 
         <View style={[styles.align, {justifyContent: null, left: 5}]}>
-            <Icon2 name={'location'} size={15} color='#d3d3d3' />
+            <Icon2 name={'location'} size={15} color='white' />
             <Text style={[styles.text, {
                 fontSize: 15,
                 padding: 0,
-                color: '#d3d3d3',
+                color: 'white',
             }]}> {location} </Text>
         </View>
       </TouchableOpacity>
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 
     text: {
         fontFamily: 'reost-semibold',
-        color: 'black',
+        color: 'white',
         fontSize: 18,
         padding: 10,
     },
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 
     ratingText: {
         fontFamily: 'reost-semibold',
-        color: 'black',
+        color: 'white',
         fontSize: 12,
     },
 

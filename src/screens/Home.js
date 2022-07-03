@@ -32,7 +32,7 @@ const Home = () => {
         <Text style={[styles.text, {
           fontFamily: 'reost-bold',
           fontSize: 20,
-          color: 'black',
+          color: 'white',
           padding: 20,
           top: 0,
         }]}>
@@ -126,7 +126,7 @@ export default Home;
 const styles = StyleSheet.create({
   upper: {
     height: SCREENHEIGHT/3.5,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
   },
 
   middle: {
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
   bottom: {
     height: (SCREENHEIGHT - (SCREENHEIGHT/3.5) - (SCREENHEIGHT/1.8)),
     top: 10,
-    backgroundColor: "white",
+    backgroundColor: "black",
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
   },
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
 
     img: {
       padding: 20,
-      backgroundColor: "white",
+      backgroundColor: "black",
       width: 300,
       height: 420,
       borderRadius: 20,
