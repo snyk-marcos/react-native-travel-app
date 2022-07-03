@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View, Dimensions,  } from 'react-native';
 import React from 'react';
-import IconContainer from '../components/IconContainer';
-import Categories from '../components/Categories';
+import IconContainer from '../components/Home/IconContainer';
+import Categories from '../components/Home/Categories';
 import { ScrollView } from 'react-native-gesture-handler';
-import Card from '../components/Card';
+import Card from '../components/Home/Card';
+import Search from '../components/Home/Search';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
@@ -113,9 +114,9 @@ const Home = () => {
         </View>
       </ScrollView>
 
-      {/* <View style={styles.bottom}>
-        <
-      </View> */}
+      <View style={styles.bottom}>
+        <Search />
+      </View>
     </View>
   )
 }
@@ -136,7 +137,10 @@ const styles = StyleSheet.create({
 
   bottom: {
     height: (SCREENHEIGHT - (SCREENHEIGHT/3.5) - (SCREENHEIGHT/1.8)),
-    backgroundColor: "blue",
+    top: 10,
+    backgroundColor: "white",
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
   },
 
   top: {

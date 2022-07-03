@@ -22,8 +22,7 @@ function TabNav(){
         initialRouteName='Home'
         screenOptions={({ route }) => ({
             headerShown: false,
-            tabBarStyle: {
-            },
+            tabBarStyle: {elevation: 0, borderTopWidth: 0},
             tabBarIcon: ({ focused, iconColor, iconName }) => {
                 if (route.name === 'Home'){
                     iconColor = focused ? '#3a86fe' : 'black'
