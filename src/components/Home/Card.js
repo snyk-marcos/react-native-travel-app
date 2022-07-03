@@ -2,10 +2,12 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import Icon2 from 'react-native-vector-icons/Ionicons';
 
-const Card = ({ img, locName, rating, location }) => {
+const Card = ({ img, locName, rating, location, detailsPage }) => {     
   return (
     <View>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={detailsPage}
+      >
         <View>
             <Image source={img} style={styles.img} />
         </View>
@@ -61,6 +63,7 @@ const styles = StyleSheet.create({
         fontFamily: 'reost-semibold',
         color: 'white',
         fontSize: 12,
+        top: 2
     },
 
     align: {

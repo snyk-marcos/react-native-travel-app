@@ -1,15 +1,18 @@
 import { StyleSheet, Text, View, Dimensions,  } from 'react-native';
 import React from 'react';
-import IconContainer from '../components/Home/IconContainer';
-import Categories from '../components/Home/Categories';
+import IconContainer from '../../components/Home/IconContainer';
+import Categories from '../../components/Home/Categories';
 import { ScrollView } from 'react-native-gesture-handler';
-import Card from '../components/Home/Card';
-import Search from '../components/Home/Search';
+import Card from '../../components/Home/Card';
+import Search from '../../components/Home/Search';
+import { useNavigation } from '@react-navigation/native';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
 
 const Home = () => {
+  const navigation = useNavigation();
+
   return (
     <View>
       <View style={styles.upper}>
@@ -42,22 +45,22 @@ const Home = () => {
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View style={styles.cats} >
             <Categories 
-              emoji={require('../assets/images/globe.png')}
+              emoji={require('../../assets/images/globe.png')}
               detailText='All'
             />
 
             <Categories 
-              emoji={require('../assets/images/mountain.png')}
+              emoji={require('../../assets/images/mountain.png')}
               detailText='Mountain'
             />
 
             <Categories 
-              emoji={require('../assets/images/shrine.png')}
+              emoji={require('../../assets/images/shrine.png')}
               detailText='Temple'
             />
 
             <Categories 
-              emoji={require('../assets/images/water.png')}
+              emoji={require('../../assets/images/water.png')}
               detailText='Lake'
             />
           </View>
@@ -68,47 +71,52 @@ const Home = () => {
         <View style={styles.middle}>
           <View style={styles.img}>
             <Card 
-              img={require('../assets/images/reservoir.jpg')}
+              img={require('../../assets/images/reservoir.jpg')}
               locName='Bozeman Reservoir'
               rating={'5.0'}
               location={'Montana, USA'}
+              detailsPage={() => navigation.navigate('Boseman')}
             />
           </View>
 
           <View style={styles.img}>
             <Card 
-              img={require('../assets/images/reservoir2.jpg')}
+              img={require('../../assets/images/reservoir2.jpg')}
               locName='Rajasthan Lake'
               rating={'5.0'}
               location={'Rajasthan, India'}
+              detailsPage={() => navigation.navigate('Rajasthan')}
             />
           </View>
 
           <View style={styles.img}>
             <Card 
-              img={require('../assets/images/temple2.jpg')}
+              img={require('../../assets/images/temple2.jpg')}
               locName='Tian Tan Buddha'
               rating={'5.0'}
               location={'Hong Kong, China'}
+              detailsPage={() => navigation.navigate('TianTan')}
             />
           </View>
 
           <View style={styles.img}>
             <Card 
-              img={require('../assets/images/mount.jpg')}
+              img={require('../../assets/images/mount.jpg')}
               locName='Sierra Nevada'
               rating={'5.0'}
               location={'Nevada, USA'}
+              detailsPage={() => navigation.navigate('SierraNevada')}
             />
           </View>
 
           <View style={styles.img}>
             <Card 
-              img={require('../assets/images/temple.jpg')}
+              img={require('../../assets/images/temple.jpg')}
               locName='Osaka Castle'
               iconName={'star'}
               rating={'5.0'}
               location={'Osaka, Japan'}
+              detailsPage={() => navigation.navigate('Osaka')}
             />
           </View>
         </View>
@@ -133,14 +141,12 @@ const styles = StyleSheet.create({
     height: SCREENHEIGHT/1.8,
     flexDirection: 'row',
     width: SCREENWIDTH * 4.1,
+    backgroundColor: 'black'
   },
 
   bottom: {
     height: (SCREENHEIGHT - (SCREENHEIGHT/3.5) - (SCREENHEIGHT/1.8)),
-    top: 10,
     backgroundColor: "black",
-    borderTopLeftRadius: 5,
-    borderTopRightRadius: 5,
   },
 
   top: {
@@ -168,7 +174,6 @@ const styles = StyleSheet.create({
       backgroundColor: "black",
       width: 300,
       height: 420,
-      borderRadius: 20,
       alignItems: 'center',
       justifyContent: 'center',
       marginLeft: 10,

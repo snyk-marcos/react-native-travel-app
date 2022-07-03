@@ -2,19 +2,18 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Feather';
-import SplashStackNav from './SplashStackNav';
-import Home from '../screens/Home';
 import Directions from '../screens/Directions';
 import Bookmarks from '../screens/Bookmarks';
 import User from '../screens/User';
+import HomeStack from './HomeStack';
 
 const Tab = createBottomTabNavigator();
 
-// function SplashNav(){
-//     return(
-//         <SplashStackNav />
-//     );
-// }
+function HomeNav(){
+    return(
+        <HomeStack />
+    );
+}
 
 function TabNav(){
   return (
@@ -42,7 +41,7 @@ function TabNav(){
             tabBarShowLabel: false,
         })}
     >
-        <Tab.Screen name='Home' component={Home} />
+        <Tab.Screen name='Home' component={HomeNav} />
         <Tab.Screen name='Directions' component={Directions} />
         <Tab.Screen name='Bookmarks' component={Bookmarks} />
         <Tab.Screen name='User' component={User} />
