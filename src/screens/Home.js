@@ -1,67 +1,142 @@
-import { StyleSheet, Text, View, Dimensions, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Dimensions,  } from 'react-native';
 import React from 'react';
 import IconContainer from '../components/IconContainer';
 import Categories from '../components/Categories';
-import { categories } from '../data/DummyData';
+import { ScrollView } from 'react-native-gesture-handler';
+import Card from '../components/Card';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.top}>
-        <IconContainer 
-          iconName={'align-left'}
-        />
+    <View>
+      <View style={styles.upper}>
+        <View style={styles.top}>
+          <IconContainer 
+            iconName={'align-left'}
+          />
 
-        <Text style={styles.text}>
-          Current Location
-          {'\n'}
-          Kuningan, West Java
+          <Text style={styles.text}>
+            Current Location
+            {'\n'}
+            Kuningan, West Java
+          </Text>
+
+          <IconContainer 
+            iconName={'bell'}
+          />
+        </View>
+
+        <Text style={[styles.text, {
+          fontFamily: 'reost-bold',
+          fontSize: 20,
+          color: 'black',
+          padding: 20,
+          top: 0,
+        }]}>
+          Where do you want to go?
         </Text>
 
-        <IconContainer 
-          iconName={'bell'}
-        />
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <View style={styles.cats} >
+            <Categories 
+              emoji={require('../assets/images/globe.png')}
+              detailText='All'
+            />
+
+            <Categories 
+              emoji={require('../assets/images/mountain.png')}
+              detailText='Mountain'
+            />
+
+            <Categories 
+              emoji={require('../assets/images/shrine.png')}
+              detailText='Temple'
+            />
+
+            <Categories 
+              emoji={require('../assets/images/water.png')}
+              detailText='Lake'
+            />
+          </View>
+        </ScrollView>
       </View>
 
-      <Text style={[styles.text, {
-        fontFamily: 'reost-bold',
-        fontSize: 20,
-        color: 'black',
-        padding: 20,
-        top: 0,
-      }]}>
-        Where do you want to go?
-      </Text>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+        <View style={styles.middle}>
+          <View style={styles.img}>
+            <Card 
+              img={require('../assets/images/reservoir.jpg')}
+              locName='Bozeman Reservoir'
+              rating={'5.0'}
+              location={'Montana, USA'}
+            />
+          </View>
 
-      <View style={styles.cats}>
-        <Categories 
-          emoji={require('../assets/images/globe.png')}
-          detailText='All'
-        />
+          <View style={styles.img}>
+            <Card 
+              img={require('../assets/images/reservoir2.jpg')}
+              locName='Rajasthan Lake'
+              rating={'5.0'}
+              location={'Rajasthan, India'}
+            />
+          </View>
 
-        <Categories 
-          emoji={require('../assets/images/mountain.png')}
-          detailText='Mountain'
-        />
+          <View style={styles.img}>
+            <Card 
+              img={require('../assets/images/temple2.jpg')}
+              locName='Tian Tan Buddha'
+              rating={'5.0'}
+              location={'Hong Kong, China'}
+            />
+          </View>
 
-        <Categories 
-          emoji={require('../assets/images/shrine.png')}
-          detailText='Temple'
-        />
-      </View>
+          <View style={styles.img}>
+            <Card 
+              img={require('../assets/images/mount.jpg')}
+              locName='Sierra Nevada'
+              rating={'5.0'}
+              location={'Nevada, USA'}
+            />
+          </View>
+
+          <View style={styles.img}>
+            <Card 
+              img={require('../assets/images/temple.jpg')}
+              locName='Osaka Castle'
+              iconName={'star'}
+              rating={'5.0'}
+              location={'Osaka, Japan'}
+            />
+          </View>
+        </View>
+      </ScrollView>
+
+      {/* <View style={styles.bottom}>
+        <
+      </View> */}
     </View>
   )
 }
 
-export default Home
+export default Home;
 
 const styles = StyleSheet.create({
-  container: {
-    height: SCREENHEIGHT/3,
+  upper: {
+    height: SCREENHEIGHT/3.5,
     backgroundColor: 'white',
+  },
+
+  middle: {
+    height: SCREENHEIGHT/1.8,
+    flexDirection: 'row',
+    width: SCREENWIDTH * 4.1,
+  },
+
+  bottom: {
+    height: (SCREENHEIGHT - (SCREENHEIGHT/3.5) - (SCREENHEIGHT/1.8)),
+    backgroundColor: "blue",
   },
 
   top: {
@@ -78,7 +153,21 @@ const styles = StyleSheet.create({
   },
 
   cats: {
+    width: SCREENWIDTH * 1.4,
     flexDirection: 'row',
-    justifyContent: 'space-evenly',  
-  },
+    justifyContent: "space-evenly",
+    left: 50
+    },
+
+    img: {
+      padding: 20,
+      backgroundColor: "white",
+      width: 300,
+      height: 420,
+      borderRadius: 20,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginLeft: 10,
+      top: 10
+    },
 })
