@@ -18,6 +18,8 @@
 		F2364099953B43F9900EE644 /* reost-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6BE2733F1D8C498CBC6E3A9B /* reost-light.otf */; };
 		C873085FABCE43E6841B4D78 /* reost-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F879E96C30A4A61AE7EC368 /* reost-medium.otf */; };
 		D719DC3EC83C4F7E9CFDB955 /* reost-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE1091AC447F4597BDB669D7 /* reost-semibold.otf */; };
+		275B59216729454AA8798898 /* pd-bi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E16E2A8C9814E16BD13BAEB /* pd-bi.ttf */; };
+		BCA77651AB364CD5AB929CBD /* pd-ebi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673AF652625549C9B441D9D6 /* pd-ebi.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		6BE2733F1D8C498CBC6E3A9B /* reost-light.otf */ = {isa = PBXFileReference; name = "reost-light.otf"; path = "../src/assets/fonts/reost-light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		2F879E96C30A4A61AE7EC368 /* reost-medium.otf */ = {isa = PBXFileReference; name = "reost-medium.otf"; path = "../src/assets/fonts/reost-medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		BE1091AC447F4597BDB669D7 /* reost-semibold.otf */ = {isa = PBXFileReference; name = "reost-semibold.otf"; path = "../src/assets/fonts/reost-semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E16E2A8C9814E16BD13BAEB /* pd-bi.ttf */ = {isa = PBXFileReference; name = "pd-bi.ttf"; path = "../src/assets/fonts/pd-bi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		673AF652625549C9B441D9D6 /* pd-ebi.ttf */ = {isa = PBXFileReference; name = "pd-ebi.ttf"; path = "../src/assets/fonts/pd-ebi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 				6BE2733F1D8C498CBC6E3A9B /* reost-light.otf */,
 				2F879E96C30A4A61AE7EC368 /* reost-medium.otf */,
 				BE1091AC447F4597BDB669D7 /* reost-semibold.otf */,
+				0E16E2A8C9814E16BD13BAEB /* pd-bi.ttf */,
+				673AF652625549C9B441D9D6 /* pd-ebi.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				F2364099953B43F9900EE644 /* reost-light.otf in Resources */,
 				C873085FABCE43E6841B4D78 /* reost-medium.otf in Resources */,
 				D719DC3EC83C4F7E9CFDB955 /* reost-semibold.otf in Resources */,
+				275B59216729454AA8798898 /* pd-bi.ttf in Resources */,
+				BCA77651AB364CD5AB929CBD /* pd-ebi.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

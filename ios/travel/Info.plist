@@ -57,6 +57,8 @@
 		<string>reost-light.otf</string>
 		<string>reost-medium.otf</string>
 		<string>reost-semibold.otf</string>
+		<string>pd-bi.ttf</string>
+		<string>pd-ebi.ttf</string>
 	</array>
 </dict>
 </plist>
