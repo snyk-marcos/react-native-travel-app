@@ -13,7 +13,7 @@ const WelcomeScreen = () => {
       <ImageBackground source={require('../assets/images/bg2.jpg')} style={styles.image}>
           <View style={styles.textContainer}>
             <Text style={styles.text}>
-                Travel The World
+                Explore the world
             </Text>
 
             <Text style={[styles.text, {

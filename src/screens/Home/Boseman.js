@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import Details from '../../components/Home/Details';
-import Card2 from '../../components/Home/Card2';
+import Details from '../../components/Details';
+import Card2 from '../../components/Card2';
 
 const Boseman = () => {
   return (

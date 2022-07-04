@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View, Dimensions,  } from 'react-native';
 import React from 'react';
-import IconContainer from '../../components/Home/IconContainer';
-import Categories from '../../components/Home/Categories';
+import IconContainer from '../../components/IconContainer';
+import Categories from '../../components/Categories';
 import { ScrollView } from 'react-native-gesture-handler';
-import Card from '../../components/Home/Card';
-import Search from '../../components/Home/Search';
+import Card from '../../components/Card';
+import Search from '../../components/Search';
 import { useNavigation } from '@react-navigation/native';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
