@@ -39,16 +39,16 @@ export default Categories
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        backgroundColor: "white",
-        borderWidth: 1.5,
-        borderColor: "#d3d3d3",
+        backgroundColor: "black",
         left: -50,
         height: 60,
         width: 145,
         borderRadius: 15,
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        top: 10
+        top: 10,
+        borderWidth: 0.8,
+        borderColor: 'white'
     },
 
     emojiContainer: {
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 15,
-        backgroundColor: '#eee',
+        backgroundColor: 'white',
     },
 
     image: {
@@ -68,6 +68,6 @@ const styles = StyleSheet.create({
     detailText: {
         fontSize: 15,
         fontFamily: 'reost-medium',
-        color: 'black'
+        color: 'white'
     }
 })

@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/Feather';
 const IconContainer = ({ iconName, bgColor}) => {
   return (
     <View style={styles.iconContainer}>
-      <Icon name={iconName} color={'black'} size={20} />
+      <Icon name={iconName} color={'white'} size={20} />
     </View>
   )
 }
@@ -17,14 +17,11 @@ const styles = StyleSheet.create({
         padding: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         width: 45,
         height: 45,
-        borderTopLeftRadius: 15,
-        borderTopRightRadius: 15,
-        borderBottomLeftRadius: 15,
-        borderBottomRightRadius: 15,
-        borderWidth: 1.5,
-        borderColor: '#d3d3d3'
+        borderRadius: 15,
+        borderWidth: 1,
+        borderColor: 'white'
     },
 })
