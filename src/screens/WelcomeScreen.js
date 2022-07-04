@@ -43,12 +43,12 @@ const WelcomeScreen = () => {
             <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                 <Text style={[styles.text, {
                     fontFamily: 'reost-medium',
-                    fontSize: 12,
+                    fontSize: 15,
                     color: 'white',
                     top: 90,
                     alignSelf: 'center'
                 }]}>
-                    Already have an account? Sign in
+                    Sign in
                 </Text>
             </TouchableOpacity>
           </View>
@@ -91,6 +91,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignSelf: 'center',
         borderRadius: 15,
-        top: 80,
+        top: 70,
     }
 })
