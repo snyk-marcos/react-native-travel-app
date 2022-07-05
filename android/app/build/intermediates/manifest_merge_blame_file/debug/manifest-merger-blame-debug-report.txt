@@ -27,12 +27,12 @@
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.6.0] C:\Users\nklmantey\.gradle\caches\transforms-3\d97418f29556dc00d9262accd924e8ac\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
-20-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:9:7-41
+20        android:icon="@mipmap/logo"
+20-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:9:7-34
 21        android:label="@string/app_name"
 21-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:8:7-39
-22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:10:7-52
+22        android:roundIcon="@mipmap/logo"
+22-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:10:7-39
 23        android:theme="@style/AppTheme"
 23-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:12:7-38
 24        android:usesCleartextTraffic="true" >
