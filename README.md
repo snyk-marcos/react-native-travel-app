@@ -21,6 +21,9 @@
 <h2>Project Status</h2>
 <p>In progress</p>
 
+<h2>Improvements</h2>
+<p>Wasn't built responsively and so may appear wonky on devices with differing screen dimensions.</p>
+
 <h2>Screenshots</h2>
 <img align="left" alt="screenshot" width="200" src=https://drive.google.com/uc?export=view&id=1M9HZ6rXgFgsVyCXEUB0q2IbT-Zs3mv7O>
 <img align="left" alt="screenshot" width="200" src=https://drive.google.com/uc?export=view&id=1huHwDQcGr61WatuarPUY5szyJdIlacQM>
