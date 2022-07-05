@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Feather';
 import Directions from '../screens/Directions';
 import Bookmarks from '../screens/Bookmarks';
-import User from '../screens/User';
+import UserProfile from '../screens/Settings/UserProfile';
 import HomeStack from './HomeStack';
 
 const Tab = createBottomTabNavigator();
@@ -44,7 +44,7 @@ function TabNav(){
         <Tab.Screen name='Home' component={HomeNav} />
         <Tab.Screen name='Directions' component={Directions} />
         <Tab.Screen name='Bookmarks' component={Bookmarks} />
-        <Tab.Screen name='User' component={User} />
+        <Tab.Screen name='User' component={UserProfile} />
     </Tab.Navigator>
   )
 }

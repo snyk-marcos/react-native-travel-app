@@ -15,6 +15,7 @@ MERGED from [:react-native-vector-icons] C:\Users\nklmantey\react-native-travel-
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\nklmantey\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\nklmantey\.gradle\caches\transforms-3\eb5de0732845d4227271d838de9753b6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\nklmantey\.gradle\caches\transforms-3\f847d2d73496ec3d012a8ae4db387b4f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] C:\Users\nklmantey\react-native-travel-app\node_modules\react-native-reanimated\android\build\.transforms\3141ed14a2b84c88a976d877399a508a\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\nklmantey\.gradle\caches\transforms-3\b1e65191b108d1b6411632de1d8ff223\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\nklmantey\.gradle\caches\transforms-3\903d2977f817a86203d512e546fb0342\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.6.0] C:\Users\nklmantey\.gradle\caches\transforms-3\3f2bb300ae2419ec192c154dada19ee6\transformed\jetified-fresco-2.6.0\AndroidManifest.xml:2:1-9:12
@@ -180,6 +181,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\nklm
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\nklmantey\.gradle\caches\transforms-3\eb5de0732845d4227271d838de9753b6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\nklmantey\.gradle\caches\transforms-3\f847d2d73496ec3d012a8ae4db387b4f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\nklmantey\.gradle\caches\transforms-3\f847d2d73496ec3d012a8ae4db387b4f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\nklmantey\react-native-travel-app\node_modules\react-native-reanimated\android\build\.transforms\3141ed14a2b84c88a976d877399a508a\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] C:\Users\nklmantey\react-native-travel-app\node_modules\react-native-reanimated\android\build\.transforms\3141ed14a2b84c88a976d877399a508a\transformed\jetified-react-native-reanimated-68-jsc\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\nklmantey\.gradle\caches\transforms-3\b1e65191b108d1b6411632de1d8ff223\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\nklmantey\.gradle\caches\transforms-3\b1e65191b108d1b6411632de1d8ff223\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\nklmantey\.gradle\caches\transforms-3\903d2977f817a86203d512e546fb0342\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:5:5-7:41

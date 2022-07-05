@@ -1,8 +1,7 @@
-import { StyleSheet, Text, View, Dimensions,  } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity, ScrollView } from 'react-native';
 import React from 'react';
 import IconContainer from '../../components/IconContainer';
 import Categories from '../../components/Categories';
-import { ScrollView } from 'react-native-gesture-handler';
 import Card from '../../components/Card';
 import Search from '../../components/Search';
 import { useNavigation } from '@react-navigation/native';
@@ -17,9 +16,11 @@ const Home = () => {
     <View>
       <View style={styles.upper}>
         <View style={styles.top}>
-          <IconContainer 
-            iconName={'align-left'}
-          />
+          <TouchableOpacity>
+            <IconContainer 
+              iconName={'align-left'}
+            />
+          </TouchableOpacity>
 
           <Text style={styles.text}>
             Current Location
