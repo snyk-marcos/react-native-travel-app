@@ -11,9 +11,11 @@
 <li>Implement Google Maps to allow searching destinations</li>
 
 <h2>Setup</h2>
-<p>Need an emulator to run the app</p>
+<h4>Clone the repository</h4>
+<p>Via HTTPS: git clone https://github.com/nklmantey/react-native-travel-app.git</p>
+<p>Via SSH: git clone git@github.com:nklmantey/react-native-travel-app.git</p>
 
-<h5>Steps</h5>
+<h4>Steps</h4>
 <li>iOS &amp; Android package installation - run npm install / yarn add to get packages</li>
 <li>Start server - npm start / yarn start</li>
 <li>Run app - npx react-native run-android / npx react-native run-ios</li>
