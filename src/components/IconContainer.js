@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 
-const IconContainer = ({ iconName, bgColor}) => {
+const IconContainer = ({ iconName }) => {
   return (
     <View style={styles.iconContainer}>
       <Icon name={iconName} color={'white'} size={20} />

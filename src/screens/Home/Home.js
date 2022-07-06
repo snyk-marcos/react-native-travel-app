@@ -3,7 +3,7 @@ import React from 'react';
 import IconContainer from '../../components/IconContainer';
 import Categories from '../../components/Categories';
 import Card from '../../components/Card';
-import Search from '../../components/Search';
+import Search from '../../components/SearchButton';
 import { useNavigation } from '@react-navigation/native';
 
 const SCREENHEIGHT = Dimensions.get('window').height;

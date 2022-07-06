@@ -7,7 +7,7 @@ const SettingsCard = ({ iconName, setting }) => {
     <TouchableOpacity>
         <View style={styles.container}>
             <View style={styles.iconText}>
-                <Icon name={iconName} size={30} color='white' />
+                <Icon name={iconName} size={25} color='white' />
                 <Text style={styles.text}> {setting} </Text>
             </View>
 
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         backgroundColor: 'black',
-        width: '95%',
+        width: '80%',
         height: 80,
         borderRadius: 15,
         borderWidth: 1.5,
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontFamily: 'reost-semibold',
         color: 'white',
-        top: 2
+        top: 3,
+        left: 10
     }
 })

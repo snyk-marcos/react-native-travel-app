@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View, Dimensions, Image } from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import IconContainer from '../../components/IconContainer';
 import SettingsCard from '../../components/SettingsCard';
 
 const SCREENHEIGHT = Dimensions.get('window').height;

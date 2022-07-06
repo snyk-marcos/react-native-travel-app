@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image, Dimensions } from 'react-native';
 import React from 'react';
 import IconContainer2 from './IconContainer2';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH = Dimensions.get('window').width;
@@ -11,9 +12,11 @@ const Details = ({ img, locName }) => {
       <Image source={img} style={styles.image} />
 
       <View style={styles.top}>
-          <IconContainer2 
-            iconName={'arrow-left'}
-          />
+          <TouchableOpacity>
+            <IconContainer2 
+              iconName={'arrow-left'}
+            />
+          </TouchableOpacity>
 
           <Text style={styles.text}>
             Region
@@ -21,9 +24,11 @@ const Details = ({ img, locName }) => {
             {locName}
           </Text>
 
-          <IconContainer2
-            iconName={'info'}
-          />
+          <TouchableOpacity>
+            <IconContainer2 
+              iconName={'info'}
+            />
+          </TouchableOpacity>
       </View>
     </View>
   )

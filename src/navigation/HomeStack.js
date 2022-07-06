@@ -6,6 +6,7 @@ import Rajasthan from '../screens/Home/Rajasthan';
 import TianTan from '../screens/Home/TianTan';
 import SierraNevada from '../screens/Home/SierraNevada';
 import Osaka from '../screens/Home/Osaka';
+import Search from '../screens/Home/Search';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const HomeStack = () => {
       <Stack.Screen name='TianTan' component={TianTan} />
       <Stack.Screen name='SierraNevada' component={SierraNevada} />
       <Stack.Screen name='Osaka' component={Osaka} />
+      <Stack.Screen name='SearchPage' component={Search} />
     </Stack.Navigator>
   )
 }

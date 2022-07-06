@@ -8,7 +8,12 @@ const IconContainer = ({ iconName }) => {
 
   return (
     <View style={styles.iconContainer}>
-      <Icon name={iconName} color={'white'} size={25} onPress={() => navigation.goBack()} />
+      {iconName === 'arrow-left' 
+        ? 
+        <Icon name={iconName} color={'white'} size={25} onPress={() => navigation.goBack()} />
+        :
+        <Icon name={iconName} color={'white'} size={25} />
+      }
     </View>
   )
 }
