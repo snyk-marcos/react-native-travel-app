@@ -1,9 +1,22 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import React from 'react';
+import React, { useState} from 'react';
 import Icon from 'react-native-vector-icons/Ionicons'
+import Bookmarks from '../screens/Bookmarks/Bookmarks';
 
-const Card2 = ({ locName, rating, location, time }) => {
-  return (
+const Card2 = ({ locName, rating, location, time, data }) => {
+    const [bookmark, setBookmark] = useState(false);
+    
+    const handleBookmark = () => {
+        setBookmark(!bookmark);
+
+        if (bookmark == true){
+            alert(
+                locName + ' has been added to your bookmarks!'
+            )
+        }
+    };
+
+    return (
       <View style={styles.container}>
         <View style={styles.align}>
             <Text style={styles.text}>
@@ -45,7 +58,7 @@ const Card2 = ({ locName, rating, location, time }) => {
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={[styles.button, {
+            <TouchableOpacity onPress={() => handleBookmark()} style={[styles.button, {
                 width: '16%',
             }]}>
                 <Icon name='bookmark' size={20} color='white' />
