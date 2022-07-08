@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React, { useState} from 'react';
-import Icon from 'react-native-vector-icons/Ionicons'
-import Bookmarks from '../screens/Bookmarks/Bookmarks';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
 
-const Card2 = ({ locName, rating, location, time, data }) => {
+const Card2 = ({ locName, rating, location, time }) => {
+    const navigation = useNavigation();
+
     const [bookmark, setBookmark] = useState(false);
     
     const handleBookmark = () => {
@@ -12,6 +14,16 @@ const Card2 = ({ locName, rating, location, time, data }) => {
         if (bookmark == true){
             alert(
                 locName + ' has been added to your bookmarks!'
+            );
+            // navigation.navigate('Bookmarks', {
+            //     locName: locName,
+            //     location: location,
+            //     rating: rating,
+            // });
+        }
+        else {
+            alert(
+                locName + ' has been removed from your bookmarks!'
             )
         }
     };

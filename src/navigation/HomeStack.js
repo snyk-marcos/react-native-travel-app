@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../screens/Home/Home';
+import Home from '../screens/Home';
 import Boseman from '../screens/Home/Boseman';
 import Rajasthan from '../screens/Home/Rajasthan';
 import TianTan from '../screens/Home/TianTan';
