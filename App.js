@@ -13,7 +13,7 @@ const App = () => {
         {
           title: 'Location Permission',
           message: 
-            'QuickPick needs access to your location ' +
+            'Travel needs access to your location ' +
             'so you can find the nearest courier.',
           buttonNeutral: 'Remind Me Later',
           buttonNegative: 'Cancel',

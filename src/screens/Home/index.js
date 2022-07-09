@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     height: SCREENHEIGHT/1.8,
     flexDirection: 'row',
     width: SCREENWIDTH * 4.1,
-    backgroundColor: 'black'
+    backgroundColor: 'black', 
   },
 
   bottom: {
