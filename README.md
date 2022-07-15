@@ -1,5 +1,5 @@
 # Travel App
-<p>An app that recommmends popular tourist destinations to users based on specified categories</p>
+<p>An app that recommmends popular tourist destinations to users based on specified categories.</p>
 
 <h2>Technologies Used</h2>
 <li>React Native</li>
