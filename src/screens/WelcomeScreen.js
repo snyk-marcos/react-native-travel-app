@@ -28,7 +28,7 @@ const WelcomeScreen = () => {
                 in your country and beyond
             </Text>
 
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('HomePage')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')}>
                 <Text style={[styles.text, {
                     fontFamily: 'reost-bold',
                     fontSize: 18,

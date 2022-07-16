@@ -18,7 +18,7 @@ const StackNav = () => {
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="HomePage" component={TabNav} />
         <Stack.Screen name="Login" component={Login} />
-        {/* <Stack.Screen name="Signup" component={Signup} /> */}
+        <Stack.Screen name="Signup" component={Signup} />
     </Stack.Navigator>
   )
 }
