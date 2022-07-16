@@ -1,8 +1,8 @@
 import React, { useEffect} from 'react';
 import { PermissionsAndroid } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import StackNav from './src/navigation/StackNav';
-
+import AuthStack from './src/navigation/AuthStack';
+import Providers from './src/navigation';
 
 const App = () => {
 
@@ -35,9 +35,11 @@ const App = () => {
   }, [])
 
   return (
-    <NavigationContainer>
-      <StackNav />
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <AuthStack />
+    // </NavigationContainer>
+
+    <Providers />
   )
 }
 

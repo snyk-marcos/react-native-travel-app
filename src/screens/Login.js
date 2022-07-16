@@ -1,15 +1,19 @@
 import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
-import React from 'react';
+import React, { useState, useContext} from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import IconContainer from '../components/IconContainer';
 import SignupInfo from '../components/SignupInfo';
 import { useNavigation } from '@react-navigation/native';
+import { AuthContext } from '../auth/AuthProvider';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH = Dimensions.get('window').width;
 
 const Signup = () => {
   const navigation = useNavigation();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { login } = useContext(AuthContext);
 
   return (
     <View>
@@ -30,12 +34,25 @@ const Signup = () => {
       </View>
 
       <View style={styles.middle}>
-        <SignupInfo infoTitle='Email' placeholder='Enter your email address' autoComplete='email' />
-        <SignupInfo infoTitle='Password' placeholder='Enter your password' autoComplete='password' />
+        <SignupInfo 
+            infoTitle='Email' 
+            placeholder='Enter your email address' 
+            autoComplete='email' 
+            value={email}
+            onChangeText={userEmail => setEmail(userEmail)}
+          />
+            
+          <SignupInfo 
+            infoTitle='Password' 
+            placeholder='Enter your password' 
+            autoComplete='password'
+            value={password}
+            onChangeText={userPassword => setPassword(userPassword)}
+          />
       </View>
 
       <View style={styles.lower}>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')}>
+        <TouchableOpacity style={styles.button} onPress={() => login(email, password)}>
           <Text style={styles.buttonText}> Log in </Text>
         </TouchableOpacity>
 

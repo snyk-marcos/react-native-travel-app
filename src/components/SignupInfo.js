@@ -4,7 +4,7 @@ import React from 'react';
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH = Dimensions.get('window').width;
 
-const SignupInfo = ({ infoTitle, placeholder, autoComplete}) => {
+const SignupInfo = ({ infoTitle, placeholder, autoComplete, value, ...rest }) => {
   return (
     <View style={{ marginTop: 10, marginVertical: 30 }}>
       <Text style={styles.text}> {infoTitle} </Text>
@@ -12,7 +12,9 @@ const SignupInfo = ({ infoTitle, placeholder, autoComplete}) => {
         placeholder={placeholder}
         style={styles.input}
         autoComplete={autoComplete}
+        value={value}
         secureTextEntry={infoTitle === 'Password' ? true : false}
+        {...rest}
       />
     </View>
   )
