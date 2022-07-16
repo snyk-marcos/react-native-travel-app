@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         height: 0.08 * SCREENHEIGHT,
         padding: 10,
         color: 'white',
-        fontFamily: 'reost-medium',
+        fontFamily: 'reost-semibold',
         fontSize: 15,
         backgroundColor: 'black',
         borderTopWidth: 0,

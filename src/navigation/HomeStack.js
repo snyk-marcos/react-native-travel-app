@@ -7,7 +7,6 @@ import TianTan from '../screens/Home/TianTan';
 import SierraNevada from '../screens/Home/SierraNevada';
 import Osaka from '../screens/Home/Osaka';
 import Search from '../screens/Home/Search';
-import TabNav from './TabNav';
 
 const Stack = createStackNavigator();
 
@@ -17,7 +16,7 @@ const HomeStack = () => {
       initialRouteName='Home'
       screenOptions={{ headerShown: false }}
     >
-      <Stack.Screen name='HomePage' component={TabNav} />
+      <Stack.Screen name='HomePage' component={Home} />
       <Stack.Screen name='Boseman' component={Boseman} />
       <Stack.Screen name='Rajasthan' component={Rajasthan} />
       <Stack.Screen name='TianTan' component={TianTan} />

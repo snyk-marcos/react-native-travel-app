@@ -10,9 +10,9 @@ const IconContainer = ({ iconName }) => {
     <View style={styles.iconContainer}>
       {iconName === 'arrow-left' 
         ? 
-        <Icon name={iconName} color={'white'} size={25} onPress={() => navigation.goBack()} />
+        <Icon name={iconName} color={'white'} size={20} onPress={() => navigation.goBack()} />
         :
-        <Icon name={iconName} color={'white'} size={25} />
+        <Icon name={iconName} color={'white'} size={20} />
       }
     </View>
   )
@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: 'black',
-        width: 55,
-        height: 55,
+        width: 45,
+        height: 45,
         borderRadius: 15,
         borderWidth: 1,
         borderColor: 'white'

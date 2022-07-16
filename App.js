@@ -1,7 +1,5 @@
 import React, { useEffect} from 'react';
 import { PermissionsAndroid } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import AuthStack from './src/navigation/AuthStack';
 import Providers from './src/navigation';
 
 const App = () => {
@@ -35,10 +33,6 @@ const App = () => {
   }, [])
 
   return (
-    // <NavigationContainer>
-    //   <AuthStack />
-    // </NavigationContainer>
-
     <Providers />
   )
 }

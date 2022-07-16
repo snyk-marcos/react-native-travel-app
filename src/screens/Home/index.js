@@ -1,16 +1,18 @@
 import { StyleSheet, Text, View, Dimensions, TouchableOpacity, ScrollView } from 'react-native';
-import React from 'react';
+import React, { useContext} from 'react';
 import IconContainer from '../../components/IconContainer';
 import Categories from '../../components/Categories';
 import Card from '../../components/Card';
 import Search from '../../components/SearchButton';
 import { useNavigation } from '@react-navigation/native';
+import { AuthContext } from '../../auth/AuthProvider';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
 
 const Home = () => {
   const navigation = useNavigation();
+  const { user } = useContext(AuthContext);
 
   return (
     <View>
@@ -167,7 +169,8 @@ const styles = StyleSheet.create({
     width: SCREENWIDTH * 1.4,
     flexDirection: 'row',
     justifyContent: "space-evenly",
-    left: 50
+    left: 50,
+    bottom: 10
     },
 
     img: {

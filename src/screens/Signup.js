@@ -51,6 +51,7 @@ const Signup = () => {
           onChangeText={userEmail => setEmail(userEmail)}
         />
           
+        
         <SignupInfo 
           infoTitle='Password' 
           placeholder='Enter your password' 
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
 
   IconContainer: {
     backgroundColor: 'black',
-    width: SCREENHEIGHT/15,
+    width: SCREENHEIGHT/10,
     alignItems: 'center',
     justifyContent: 'center',
     height: SCREENHEIGHT/13,

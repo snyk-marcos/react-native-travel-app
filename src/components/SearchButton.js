@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View, TouchableOpacity  } from 'react-native';
-import React from 'react';
+import React, { useContext} from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 import IconContainer from './IconContainer';
 import { useNavigation } from '@react-navigation/native';
+import { AuthContext } from '../auth/AuthProvider';
 
 const Search = () => {
   const navigation = useNavigation();
+  const { logout } = useContext(AuthContext);
   
   return (
     <View style={styles.container}>
@@ -17,9 +19,11 @@ const Search = () => {
       </TouchableOpacity>
 
       <View style={{left: 10}}>
-        <IconContainer 
-          iconName={'shuffle'}
-        />
+        <TouchableOpacity onPress={() => logout()}> 
+          <IconContainer 
+            iconName={'shuffle'}
+          />
+        </TouchableOpacity>
       </View>
     </View>
   )
