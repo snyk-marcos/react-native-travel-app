@@ -27,5 +27,4 @@
 <p>Wasn't built responsively and so may appear wonky on devices with differing screen dimensions.</p>
 <p> Authentication added <p>
 
-<h2>Screenshots</h2>
-[Welcome screen](./src/assets/screenshots/1welcome.png?raw=true "Optional Title")
+## Screenshots
