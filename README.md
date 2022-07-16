@@ -28,4 +28,4 @@
 <p> Authentication added <p>
 
 <h2>Screenshots</h2>
-![Welcome screen](./src/assets/screenshots/1welcome.png?raw=true "Optional Title")
+[Welcome screen](./src/assets/screenshots/1welcome.png?raw=true "Optional Title")
