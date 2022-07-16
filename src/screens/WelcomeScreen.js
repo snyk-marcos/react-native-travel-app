@@ -48,7 +48,7 @@ const WelcomeScreen = () => {
                     top: 90,
                     alignSelf: 'center'
                 }]}>
-                    Sign in
+                    Log in
                 </Text>
             </TouchableOpacity>
           </View>

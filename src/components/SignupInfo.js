@@ -12,6 +12,7 @@ const SignupInfo = ({ infoTitle, placeholder, autoComplete}) => {
         placeholder={placeholder}
         style={styles.input}
         autoComplete={autoComplete}
+        secureTextEntry={infoTitle === 'Password' ? true : false}
       />
     </View>
   )
