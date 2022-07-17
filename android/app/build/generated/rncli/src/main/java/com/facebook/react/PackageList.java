@@ -19,6 +19,8 @@ import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
 import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
+// react-native-image-crop-picker
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
 // react-native-maps
 import com.airbnb.android.react.maps.MapsPackage;
 // react-native-reanimated
@@ -78,6 +80,7 @@ public class PackageList {
       new ReactNativeFirebaseAuthPackage(),
       new ReactNativeFirebaseFirestorePackage(),
       new RNGestureHandlerPackage(),
+      new PickerPackage(),
       new MapsPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),

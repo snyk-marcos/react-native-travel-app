@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\nklmantey\\react-native-travel-app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\nklmantey\\.gradle\\caches\\transforms-3\\f790df6d51054a8b4ffbf307592307ce\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,112,164",
+                        "endColumns": "56,51,46",
+                        "endOffsets": "107,159,206"
+                    },
+                    "to": {
+                        "startLines": "53,54,55",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "5188,5245,5297",
+                        "endColumns": "56,51,46",
+                        "endOffsets": "5240,5292,5339"
+                    }
+                },
+                {
                     "source": "C:\\Users\\nklmantey\\.gradle\\caches\\transforms-3\\dfeee12f217856b1796e1bda7e913005\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ko\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",

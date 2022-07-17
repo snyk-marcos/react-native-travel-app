@@ -18,7 +18,7 @@ const Signup = () => {
       if (password.length < 6) {
         alert('Password must be at least 6 characters long');
       } else {
-      navigation.navigate('Profile', {
+      navigation.navigate('SetPhotoName', {
         email: email,
         password: password,
       });
