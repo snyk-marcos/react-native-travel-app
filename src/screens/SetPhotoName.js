@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View, Dimensions, TouchableOpacity, Image } from 'react-native';
-import React, { useState, useContext } from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
+import React, { useState, useContext, createRef } from 'react';
 import IconContainer from '../components/IconContainer';
 import SignupInfo from '../components/SignupInfo';
 import { useNavigation } from '@react-navigation/native';
 import { AuthContext } from '../auth/AuthProvider';
 import firestore from '@react-native-firebase/firestore';
 import ImagePicker from 'react-native-image-crop-picker';
+import BottomSheet from 'reanimated-bottom-sheet';
+import Animated from 'react-native-reanimated';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH = Dimensions.get('window').width;
@@ -55,8 +56,49 @@ const SetPhotoName = ({ route }) => {
     })
   };
 
+   renderInner = () => (
+    <View style={styles.panel}>
+      <View style={{ alignItems: 'center' }}>
+        <Text style={styles.panelTitle}> Upload photo </Text>
+        <Text style={styles.panelSubtitle}> Choose a profile picture </Text>
+      </View>
+
+      <TouchableOpacity style={styles.panelButton} onPress={takePhoto}>
+          <Text style={styles.panelButtonText}> Take a photo </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.panelButton} onPress={choosePhoto}>
+          <Text style={styles.panelButtonText}> Choose from gallery </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.panelButton} onPress={() => this.bs.current.snapTo(1)}>
+          <Text style={styles.panelButtonText}> Cancel </Text>
+      </TouchableOpacity>
+    </View>
+  );
+
+   renderHeader = () => (
+    <View style={styles.header}>
+      <View style={{ alignItems: 'center' }}>
+        <View style={styles.panelHandle}></View>
+      </View>
+    </View>
+  );
+
+  bs = React.createRef();
+  fall = new Animated.Value(1);
+
   return (
     <View>
+      <BottomSheet 
+        ref={this.bs}
+        snapPoints={[300, 0]}
+        initialSnap={1}
+        callbackNode={this.fall}
+        enabledGestureInteraction={true}
+        renderContent={this.renderInner}
+        renderHeader={this.renderHeader}
+      />
       <View style={styles.upper}>
         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
           <TouchableOpacity>
@@ -71,7 +113,7 @@ const SetPhotoName = ({ route }) => {
         <View style={{ top: -50, alignSelf: 'center' }}>
           <Text style={styles.infoText}> Add a profile picture </Text>
           <View style={{ alignSelf: 'center' }}>
-            <TouchableOpacity style={styles.IconContainer}  onPress={choosePhoto}>
+            <TouchableOpacity style={styles.IconContainer}  onPress={() => this.bs.current.snapTo(0)}>
               <Image
                 source={{ uri: image }}
                 style={{ height: '100%', width: '100%', borderRadius: 15 }}
@@ -170,6 +212,25 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     flexDirection: 'row',
   },
+
+  panelButton: {
+    backgroundColor: 'black',
+    width: 0.9 * SCREENWIDTH,
+    height: 0.05 * SCREENHEIGHT,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    borderRadius: 15,
+    marginTop: 10
+
+  },
+
+  panelButtonText: {
+    fontFamily: 'AlongSansExtraBold',
+    fontSize: 18,
+    color: 'white',
+    alignSelf: 'center'
+  },
   
   buttonText: {
     fontFamily: 'AlongSansExtraBold',
@@ -183,5 +244,45 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: 'white',
     marginTop: 20,
+  },
+
+  panel: {
+    padding: 20,
+    backgroundColor: 'white',
+  },
+
+  panelTitle: {
+    fontSize: 27,
+    height: 35,
+    fontFamily: 'AlongSansSemiBold',
+    color: 'black',
+  },
+
+  panelSubtitle: {
+    fontSize: 14,
+    color: 'black',
+    height: 30,
+    marginBottom: 10,
+    fontFamily: 'AlongSansMedium',
+  },
+
+  panelHandle: {
+    width: 40,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: 'black',
+    marginBottom: 10,
+  },
+
+  header: {
+    backgroundColor: '#FFFFFF',
+    shadowColor: '#333333',
+    shadowOffset: {width: -1, height: -3},
+    shadowRadius: 2,
+    shadowOpacity: 0.4,
+    // elevation: 5,
+    paddingTop: 20,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
   },
 })
