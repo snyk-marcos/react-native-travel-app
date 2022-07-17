@@ -29,9 +29,12 @@
 <p> Authentication added <p>
 
 ## Screenshots
-<img align="left" alt="1welcome" src="https://drive.google.com/uc?export=view&id=1W_uj5f7R7XYLLSGjVliFQ3YurM8FpNrz" width="280"/>
-<img align="left" alt="2signup" src="https://drive.google.com/uc?export=view&id=1TB9LCS53ZubFpqMc1Q43tDOfA6dYg5nZ" width="280"/>
-<img align="left" alt="3login" src="https://drive.google.com/uc?export=view&id=1FRYQ43VW34B12m-GqWo7rTeyMhfJe9_n" width="280"/>
-<img align="left" alt="4home" src="https://drive.google.com/uc?export=view&id=1pmJNc6a9ST4uPnw2vNt30R11alFaJqzz" width="280"/>
-<img align="left" alt="5info" src="https://drive.google.com/uc?export=view&id=1AcxTDAl6HBdELoIBSQ9p4UymFyMjGji5" width="280"/>
-<img align="left" alt="6details" src="https://drive.google.com/uc?export=view&id=1IagQ9mnm5qx3ymTyZIKfAgntsCw1gxlh" width="280"/>
+<img align="left" alt="1welcome" src="https://drive.google.com/uc?export=view&id=1v_koTM3LPumjL5F3MKcQ-LWimHjtwcyS" width="300"/>
+<img align="left" alt="2signup" src="https://drive.google.com/uc?export=view&id=1vZjxnSyaIa19MvotRHyMrVMenC6AelxO" width="300"/>
+<img align="left" alt="3login" src="https://drive.google.com/uc?export=view&id=1vY4hg8KuVU2MSwdBIRXALPiyBroq2vVv" width="300"/>
+<img align="left" alt="4home" src="https://drive.google.com/uc?export=view&id=1vROI2TS9tbu1GNATA8y3fyUbe1ttj8vY" width="300"/>
+<img align="left" alt="5info" src="https://drive.google.com/uc?export=view&id=1vQrsuuRly7JmOb56mA2mfnJAlZCBmtp8" width="300"/>
+<img align="left" alt="6details" src="https://drive.google.com/uc?export=view&id=1vbK19yLhhwvYATbUvqSKxNZveCcJXzeD" width="300"/>
+<img align="left" alt="6details" src="https://drive.google.com/uc?export=view&id=1vahIYpDF4qWevmBIPOB_a2yIeawCLBBQ" width="300"/>
+<img align="left" alt="6details" src="https://drive.google.com/uc?export=view&id=1AcxTDAl6HBdELoIBSQ9p4UymFyMjGji5" width="300"/>
+<img align="left" alt="6details" src="https://drive.google.com/uc?export=view&id=1IagQ9mnm5qx3ymTyZIKfAgntsCw1gxlh" width="300"/>
