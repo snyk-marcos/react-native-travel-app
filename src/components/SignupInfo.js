@@ -24,8 +24,8 @@ export default SignupInfo
 
 const styles = StyleSheet.create({
     text: {
-        fontFamily: 'reost-semibold',
-        fontSize: 18,
+        fontFamily: 'AlongSansSemiBold',
+        fontSize: 16,
         color: 'white',
     },
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         height: 0.08 * SCREENHEIGHT,
         padding: 10,
         color: 'white',
-        fontFamily: 'reost-semibold',
+        fontFamily: 'AlongSansSemiBold',
         fontSize: 15,
         backgroundColor: 'black',
         borderTopWidth: 0,

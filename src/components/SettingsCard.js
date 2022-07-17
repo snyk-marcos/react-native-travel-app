@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
 
     text: {
         fontSize: 20,
-        fontFamily: 'reost-semibold',
+        fontFamily: 'AlongSansSemiBold',
         color: 'white',
         top: 3,
         left: 10

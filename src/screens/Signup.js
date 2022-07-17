@@ -71,7 +71,7 @@ const Signup = () => {
 
           <TouchableOpacity onPress={() => navigation.navigate('Login')}>
             <Text style={[styles.loginText,  {
-              fontFamily: 'reost-bold',
+              fontFamily: 'AlongSansExtraBold',
             }]}> Log in </Text>
           </TouchableOpacity>
         </View>
@@ -105,14 +105,14 @@ const styles = StyleSheet.create({
   },
 
   signupText: {
-    fontFamily: 'reost-bold',
+    fontFamily: 'AlongSansExtraBold',
     marginLeft: 10,
     fontSize: 30,
     color: 'white'
   },
 
   infoText: {
-    fontFamily: 'reost-medium',
+    fontFamily: 'AlongSansMedium',
     fontSize: 14,
     color: 'white',
     marginTop: 50,
@@ -142,14 +142,14 @@ const styles = StyleSheet.create({
   },
   
   buttonText: {
-    fontFamily: 'reost-bold',
+    fontFamily: 'AlongSansExtraBold',
     fontSize: 18,
     color: 'black',
     alignSelf: 'center'
   },
 
   loginText: {
-    fontFamily: 'reost-medium',
+    fontFamily: 'AlongSansMedium',
     fontSize: 15,
     color: 'white',
     marginTop: 20,

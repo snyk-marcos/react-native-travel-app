@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     },
 
     text: {
-        fontFamily: 'reost-semibold',
+        fontFamily: 'AlongSansSemiBold',
         color: 'white',
         fontSize: 18,
         padding: 10,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     },
 
     ratingText: {
-        fontFamily: 'reost-semibold',
+        fontFamily: 'AlongSansSemiBold',
         color: 'white',
         fontSize: 12,
         top: 2

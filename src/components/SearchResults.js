@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
       },
 
       searchResults: {
-          fontFamily: "Raleway-SemiBold",
+          fontFamily: "AlongSansSemiBold",
           fontSize: 15,
           marginLeft: 5,
           color: "black"

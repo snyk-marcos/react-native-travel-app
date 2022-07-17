@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    fontFamily: 'reost-bold',
+    fontFamily: 'AlongSansExtraBold',
     color: 'white',
     fontSize: 30,
   }

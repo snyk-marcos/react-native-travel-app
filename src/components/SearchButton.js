@@ -13,7 +13,7 @@ const Search = () => {
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate('SearchPage')}>
         <View style={styles.search}>
-            <Icon name='search' size={25} color='black' />
+            <Icon name='search' size={25} color='white' />
             <Text style={styles.text}> Search for places </Text>
         </View>
       </TouchableOpacity>
@@ -45,18 +45,23 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         width: 250,
         height: 50,
-        borderRadius: 15,
-        padding: 10
+        padding: 10,
+        borderWidth: 2,
+        borderColor: 'white',
+        borderTopWidth: 0,
+        borderLeftWidth: 0,
+        borderRightWidth: 0,
     },
 
     text: {
-        fontFamily: 'reost-medium',
-        fontSize: 15,
+        fontFamily: 'AlongSansSemiBold',
+        fontSize: 16,
         left: 10,
         top: 2,
-        color: 'black'
+        color: 'white',
+        alignSelf: 'center',
     }
 })

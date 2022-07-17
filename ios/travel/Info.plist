@@ -59,6 +59,10 @@
 		<string>reost-semibold.otf</string>
 		<string>pd-bi.ttf</string>
 		<string>pd-ebi.ttf</string>
+		<string>AlongSansExtraBold.otf</string>
+		<string>AlongSansMedium.otf</string>
+		<string>AlongSansRegular.otf</string>
+		<string>AlongSansSemiBold.otf</string>
 	</array>
 </dict>
 </plist>

@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontFamily: 'reost-semibold',
+    fontFamily: 'AlongSansSemiBold',
     fontSize: 15,
     color: 'black',
     top: 10

@@ -20,6 +20,10 @@
 		D719DC3EC83C4F7E9CFDB955 /* reost-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE1091AC447F4597BDB669D7 /* reost-semibold.otf */; };
 		275B59216729454AA8798898 /* pd-bi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E16E2A8C9814E16BD13BAEB /* pd-bi.ttf */; };
 		BCA77651AB364CD5AB929CBD /* pd-ebi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673AF652625549C9B441D9D6 /* pd-ebi.ttf */; };
+		FF874A50D11C49CDAB8F40FB /* AlongSansExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CC2D3988C449CB525C7DB /* AlongSansExtraBold.otf */; };
+		C7E02AD65045454098767064 /* AlongSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07777BEBDFC1496E87698828 /* AlongSansMedium.otf */; };
+		3CD688E60BBF459496F7D2F8 /* AlongSansRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C42A0C28C36C495985C61E6F /* AlongSansRegular.otf */; };
+		C84C94228BFD4D86B0B4B771 /* AlongSansSemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC71B0AF04604ACF97299FAD /* AlongSansSemiBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		BE1091AC447F4597BDB669D7 /* reost-semibold.otf */ = {isa = PBXFileReference; name = "reost-semibold.otf"; path = "../src/assets/fonts/reost-semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		0E16E2A8C9814E16BD13BAEB /* pd-bi.ttf */ = {isa = PBXFileReference; name = "pd-bi.ttf"; path = "../src/assets/fonts/pd-bi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		673AF652625549C9B441D9D6 /* pd-ebi.ttf */ = {isa = PBXFileReference; name = "pd-ebi.ttf"; path = "../src/assets/fonts/pd-ebi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9B1CC2D3988C449CB525C7DB /* AlongSansExtraBold.otf */ = {isa = PBXFileReference; name = "AlongSansExtraBold.otf"; path = "../src/assets/fonts/AlongSansExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		07777BEBDFC1496E87698828 /* AlongSansMedium.otf */ = {isa = PBXFileReference; name = "AlongSansMedium.otf"; path = "../src/assets/fonts/AlongSansMedium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C42A0C28C36C495985C61E6F /* AlongSansRegular.otf */ = {isa = PBXFileReference; name = "AlongSansRegular.otf"; path = "../src/assets/fonts/AlongSansRegular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC71B0AF04604ACF97299FAD /* AlongSansSemiBold.otf */ = {isa = PBXFileReference; name = "AlongSansSemiBold.otf"; path = "../src/assets/fonts/AlongSansSemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +178,10 @@
 				BE1091AC447F4597BDB669D7 /* reost-semibold.otf */,
 				0E16E2A8C9814E16BD13BAEB /* pd-bi.ttf */,
 				673AF652625549C9B441D9D6 /* pd-ebi.ttf */,
+				9B1CC2D3988C449CB525C7DB /* AlongSansExtraBold.otf */,
+				07777BEBDFC1496E87698828 /* AlongSansMedium.otf */,
+				C42A0C28C36C495985C61E6F /* AlongSansRegular.otf */,
+				FC71B0AF04604ACF97299FAD /* AlongSansSemiBold.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -277,6 +289,10 @@
 				D719DC3EC83C4F7E9CFDB955 /* reost-semibold.otf in Resources */,
 				275B59216729454AA8798898 /* pd-bi.ttf in Resources */,
 				BCA77651AB364CD5AB929CBD /* pd-ebi.ttf in Resources */,
+				FF874A50D11C49CDAB8F40FB /* AlongSansExtraBold.otf in Resources */,
+				C7E02AD65045454098767064 /* AlongSansMedium.otf in Resources */,
+				3CD688E60BBF459496F7D2F8 /* AlongSansRegular.otf in Resources */,
+				C84C94228BFD4D86B0B4B771 /* AlongSansSemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

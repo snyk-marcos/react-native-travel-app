@@ -17,8 +17,8 @@ const WelcomeScreen = () => {
             </Text>
 
             <Text style={[styles.text, {
-                fontFamily: 'reost-medium',
-                fontSize: 15,
+                fontFamily: 'AlongSansSemiBold',
+                fontSize: 16,
                 alignItems: 'center',
                 justifyContent: 'center',
                 top: 40
@@ -30,7 +30,7 @@ const WelcomeScreen = () => {
 
             <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')}>
                 <Text style={[styles.text, {
-                    fontFamily: 'reost-bold',
+                    fontFamily: 'AlongSansExtraBold',
                     fontSize: 18,
                     color: 'black',
                     top: 0,
@@ -42,8 +42,8 @@ const WelcomeScreen = () => {
 
             <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                 <Text style={[styles.text, {
-                    fontFamily: 'reost-medium',
-                    fontSize: 15,
+                    fontFamily: 'AlongSansSemiBold',
+                    fontSize: 16,
                     color: 'white',
                     top: 90,
                     alignSelf: 'center'

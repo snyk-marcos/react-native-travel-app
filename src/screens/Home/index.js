@@ -27,7 +27,7 @@ const Home = () => {
           <Text style={styles.text}>
             Current Location
             {'\n'}
-            Kuningan, West Java
+            Accra, Ghana
           </Text>
 
           <IconContainer 
@@ -36,7 +36,7 @@ const Home = () => {
         </View>
 
         <Text style={[styles.text, {
-          fontFamily: 'reost-bold',
+          fontFamily: 'AlongSansExtraBold',
           fontSize: 20,
           color: 'white',
           padding: 20,
@@ -159,9 +159,9 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontFamily: 'reost-semibold',
+    fontFamily: 'AlongSansSemiBold',
     fontSize: 15,
-    color: '#d3d3d3',
+    color: 'white',
     top: 10
   },
 

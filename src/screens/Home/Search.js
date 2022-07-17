@@ -88,12 +88,14 @@ const styles = StyleSheet.create({
         backgroundColor: "black",
         borderWidth:2,
         borderColor:"white",
-        fontFamily: "reost-semibold",
+        fontFamily: "AlongSansSemiBold",
         marginLeft: 20,
         height: 60,
-        borderRadius: 10,
         fontSize: 16,
         color: "white",
+        borderTopWidth: 0,
+        borderLeftWidth: 0,
+        borderRightWidth: 0,
     },
 
     location: {

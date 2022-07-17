@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
 
     detailText: {
         fontSize: 15,
-        fontFamily: 'reost-medium',
+        fontFamily: 'AlongSansMedium',
         color: 'white'
     }
 })
