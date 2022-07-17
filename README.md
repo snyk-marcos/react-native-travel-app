@@ -3,6 +3,7 @@
 
 <h2>Technologies Used</h2>
 <li>React Native</li>
+<li>Firebase for the backend</li>
 
 <h2>Upcoming features</h2>
 <li>Allow filtering by categories</li>
