@@ -4,23 +4,42 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import IconContainer from '../components/IconContainer';
 import SignupInfo from '../components/SignupInfo';
 import { useNavigation } from '@react-navigation/native';
-import { AuthContext } from '../auth/AuthProvider';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH = Dimensions.get('window').width;
 
 const Signup = () => {
   const navigation = useNavigation();
-  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { signup } = useContext(AuthContext); 
+
+  const passData = () => {
+    if (email && password) {
+      if (password.length < 6) {
+        alert('Password must be at least 6 characters long');
+      } else {
+      navigation.navigate('Profile', {
+        email: email,
+        password: password,
+      });
+    }
+    } else if (email && !password) {
+      alert('Please enter a valid password');
+    } else if (!email && password) {
+      alert('Please enter a valid email address');
+    } else {
+      alert('Please meet all requirements');
+    };
+  }
 
   return (
     <View>
       <View style={styles.upper}>
         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-          <IconContainer iconName='arrow-left' />
+          <TouchableOpacity>
+            <IconContainer iconName='arrow-left' />
+          </TouchableOpacity>
+
           <Text style={styles.signupText}> Sign up</Text>
         </View>
 
@@ -35,14 +54,6 @@ const Signup = () => {
       </View>
 
       <View style={styles.middle}>
-        <SignupInfo 
-          infoTitle='Name' 
-          placeholder='Enter your name' 
-          autoComplete='name'
-          value={name}
-          onChangeText={userFullName => setName(userFullName)} 
-        />
-
         <SignupInfo 
           infoTitle='Email' 
           placeholder='Enter your email address' 
@@ -62,8 +73,9 @@ const Signup = () => {
       </View>
 
       <View style={styles.lower}>
-        <TouchableOpacity style={styles.button} onPress={() => signup(email, password)}>
-          <Text style={styles.buttonText}> Sign up </Text>
+        <TouchableOpacity style={styles.button} onPress={passData}>
+          <Text style={styles.buttonText}> Next </Text>
+          <Icon name='arrow-forward' size={30} color='black' />
         </TouchableOpacity>
 
         <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
@@ -92,16 +104,18 @@ const styles = StyleSheet.create({
 
   middle: {
     backgroundColor: 'black',
-    height: SCREENHEIGHT - (SCREENHEIGHT / 3.5) - (SCREENHEIGHT / 4),
+    height: SCREENHEIGHT - (SCREENHEIGHT / 3.5) - (SCREENHEIGHT / 2.5),
     width: SCREENWIDTH,
     padding: 20,
   },
 
   lower: {
     backgroundColor: 'black',
-    height: SCREENHEIGHT / 4,
+    height: SCREENHEIGHT / 2.5,
     width: SCREENWIDTH,
     padding: 20,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 
   signupText: {
@@ -138,7 +152,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     borderRadius: 15,
-    marginTop: 20,
+    flexDirection: 'row',
   },
   
   buttonText: {

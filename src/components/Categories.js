@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly',
         alignItems: 'center',
         top: 10,
-        borderWidth: 0.8,
+        borderWidth: 2,
         borderColor: 'white'
     },
 

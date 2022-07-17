@@ -14,6 +14,7 @@ const SignupInfo = ({ infoTitle, placeholder, autoComplete, value, ...rest }) =>
         autoComplete={autoComplete}
         value={value}
         secureTextEntry={infoTitle === 'Password' ? true : false}
+        autoCapitalize='none'
         {...rest}
       />
     </View>

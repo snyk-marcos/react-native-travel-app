@@ -19,7 +19,10 @@ const Signup = () => {
     <View>
       <View style={styles.upper}>
         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-          <IconContainer iconName='arrow-left' />
+          <TouchableOpacity>
+            <IconContainer iconName='arrow-left' />
+          </TouchableOpacity>
+          
           <Text style={styles.titleText}> Login </Text>
         </View>
 
@@ -92,6 +95,8 @@ const styles = StyleSheet.create({
     height: SCREENHEIGHT / 2.5,
     width: SCREENWIDTH,
     padding: 20,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 
   titleText: {
@@ -128,7 +133,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     borderRadius: 15,
-    marginTop: 20,
   },
   
   buttonText: {
