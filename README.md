@@ -26,7 +26,6 @@
 
 <h2>Improvements</h2>
 <p>Wasn't built responsively and so may appear wonky on devices with differing screen dimensions.</p>
-<p> Authentication added <p>
 
 ## Screenshots
 <img align="left" alt="1welcome" src="https://drive.google.com/uc?export=view&id=1v_koTM3LPumjL5F3MKcQ-LWimHjtwcyS" width="300"/>
