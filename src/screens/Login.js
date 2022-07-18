@@ -13,7 +13,7 @@ const Signup = () => {
   const navigation = useNavigation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { login } = useContext(AuthContext);
+  const { login, googleLogin } = useContext(AuthContext);
 
   return (
     <View>
@@ -29,7 +29,7 @@ const Signup = () => {
         <View>
           <Text style={styles.infoText}> Log in with the following option.</Text>
           <View>
-            <TouchableOpacity style={styles.IconContainer}>
+            <TouchableOpacity style={styles.IconContainer} onPress={googleLogin}>
               <Icon name='logo-google' size={30} color='white' />
             </TouchableOpacity>
           </View>

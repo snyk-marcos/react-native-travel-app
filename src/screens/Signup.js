@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import IconContainer from '../components/IconContainer';
 import SignupInfo from '../components/SignupInfo';
 import { useNavigation } from '@react-navigation/native';
+import { AuthContext } from '../auth/AuthProvider';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH = Dimensions.get('window').width;
@@ -12,6 +13,7 @@ const Signup = () => {
   const navigation = useNavigation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { googleLogin } = useContext(AuthContext);
 
   const passData = () => {
     if (email && password) {
@@ -46,7 +48,7 @@ const Signup = () => {
         <View>
           <Text style={styles.infoText}> Sign up with the following option.</Text>
           <View>
-            <TouchableOpacity style={styles.IconContainer}>
+            <TouchableOpacity style={styles.IconContainer} onPress={googleLogin}>
               <Icon name='logo-google' size={30} color='white' />
             </TouchableOpacity>
           </View>
