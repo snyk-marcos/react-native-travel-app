@@ -17,7 +17,7 @@ const DrawerNav = () => {
 function TabNav(){
   return (
     <Tab.Navigator
-        initialRouteName='Home'
+        initialRouteName='HomePage'
         screenOptions={({ route }) => ({
             headerShown: false,
             tabBarStyle: {elevation: 0, borderTopWidth: 0, backgroundColor: 'black'},
@@ -40,7 +40,7 @@ function TabNav(){
             tabBarShowLabel: false,
         })}
     >
-        <Tab.Screen name='Home' component={DrawerNav} />
+        <Tab.Screen name='HomePage' component={DrawerNav} />
         <Tab.Screen name='Directions' component={Directions} />
         <Tab.Screen name='Bookmarks' component={Bookmarks} />
         <Tab.Screen name='User' component={UserProfile} />

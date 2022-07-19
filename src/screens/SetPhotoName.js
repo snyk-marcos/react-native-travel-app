@@ -20,23 +20,22 @@ const SetPhotoName = ({ route }) => {
   const [image, setImage] = useState('https://i.pinimg.com/originals/21/1b/25/211b2554a3b2f53e4db9f4f8c04263a9.png');
   const { signup, user } = useContext(AuthContext);
 
-  const userMail = () => {
-    email: email;
-    console.log(email);
-  };
-
-  // const addUser = () => {
-  //   firestore()
-  //   .collection('users')
-  //   .doc(auth().currentUser.email)
-  //   .add({
-  //     name: name,
-  //     email: email,
-  //   })
-  //   .then(() => {
-  //     console.log(name, email);
-  //   })
+  // const userMail = () => {
+  //   email: email;
+  //   console.log(email);
   // };
+
+  const addUser = () => {
+    firestore()
+    .collection('users')
+    .add({
+      name: name,
+      email: email,
+    })
+    .then(() => {
+      console.log(name, email);
+    })
+  };
 
   const handleSignup = () => {
     signup(email, password);
@@ -141,7 +140,7 @@ const SetPhotoName = ({ route }) => {
       </View>
 
       <View style={styles.lower}>
-        <TouchableOpacity style={styles.button} onPress={userMail}>
+        <TouchableOpacity style={styles.button} onPress={handleSignup}>
           <Text style={styles.buttonText}> Finish </Text>
         </TouchableOpacity>
 

@@ -41,22 +41,22 @@ const Card2 = ({ locName, rating, location, time }) => {
             </View>
         </View>
 
-        <View style={[styles.align, {justifyContent: null, left: 5}]}>
-            <Icon name={'location'} size={15} color='white' />
+        <View style={[styles.align, {justifyContent: null, left: 40, top: 10}]}>
+            <Icon name={'location-outline'} size={25} color='white' />
             <Text style={[styles.text, {
-                fontSize: 13,
-                top: 2,
+                fontSize: 15,
                 padding: 0,
+                left: 0,
                 color: 'white',
             }]}> {location} </Text>
         </View>
 
-        <View style={[styles.align, {justifyContent: null, left: 5, top: 10}]}>
-            <Icon name={'time'} size={15} color='white' />
+        <View style={[styles.align, {justifyContent: null, left: 40, top: 30}]}>
+            <Icon name={'time-outline'} size={25} color='white' />
             <Text style={[styles.text, {
-                fontSize: 13,
-                top: 2,
+                fontSize: 15,
                 padding: 0,
+                left: 0,
                 color: 'white',
             }]}> {time} </Text>
         </View>
@@ -65,6 +65,7 @@ const Card2 = ({ locName, rating, location, time }) => {
             <TouchableOpacity style={styles.button}>
                 <Text style={[styles.text, {
                     fontSize: 15,
+                    left: 0,
                 }]}>
                     See on the map
                 </Text>
@@ -86,17 +87,17 @@ const styles = StyleSheet.create({
     align: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '95%',
+        alignItems: 'center',
     },
 
     container: {
-        backgroundColor: 'grey',
-        opacity: 0.7,
-        top: 560,
-        height: 160,
+        backgroundColor: 'black',
+        top: 530,
+        opacity: 0.8,
+        height: 200,
         width: '85%',
         alignSelf: 'center',
-        borderRadius: 20
+        borderRadius: 15
     },
 
     text: {
@@ -104,29 +105,37 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 18,
         padding: 10,
+        left: 40,
     },
 
     rating: {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        right: 40,
     },
 
     ratingText: {
         fontFamily: 'AlongSansSemiBold',
         color: 'white',
         fontSize: 12,
-        top: 2
+        top: 2,
+        left: 2,
     },
 
     button: {
         backgroundColor: 'black',
-        width: '70%',
-        height: 55,
+        width: '50%',
+        height: 45,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 15,
-        top: 20,
-        left: -5
+        borderTopWidth: 0,
+        borderLeftWidth: 0,
+        borderRightWidth: 0,
+        borderWidth: 2,
+        borderColor: 'white',
+        marginTop: 40,
+        left: -5,
+        backgroundColor: 'transparent',
     }
 })
