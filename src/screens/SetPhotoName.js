@@ -4,6 +4,7 @@ import IconContainer from '../components/IconContainer';
 import SignupInfo from '../components/SignupInfo';
 import { useNavigation } from '@react-navigation/native';
 import { AuthContext } from '../auth/AuthProvider';
+import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
 import ImagePicker from 'react-native-image-crop-picker';
 import BottomSheet from 'reanimated-bottom-sheet';
@@ -17,17 +18,25 @@ const SetPhotoName = ({ route }) => {
   const navigation = useNavigation();
   const [name, setName] = useState('');
   const [image, setImage] = useState('https://i.pinimg.com/originals/21/1b/25/211b2554a3b2f53e4db9f4f8c04263a9.png');
-  const { signup } = useContext(AuthContext);
+  const { signup, user } = useContext(AuthContext);
 
-  const addUser = () => {
-    firestore().collection('users').add({
-      name: name,
-      email: email,
-    })
-    .then(() => {
-      console.log(name, email);
-    })
+  const userMail = () => {
+    email: email;
+    console.log(email);
   };
+
+  // const addUser = () => {
+  //   firestore()
+  //   .collection('users')
+  //   .doc(auth().currentUser.email)
+  //   .add({
+  //     name: name,
+  //     email: email,
+  //   })
+  //   .then(() => {
+  //     console.log(name, email);
+  //   })
+  // };
 
   const handleSignup = () => {
     signup(email, password);
@@ -37,7 +46,7 @@ const SetPhotoName = ({ route }) => {
   const takePhoto = () => {
     ImagePicker.openCamera({
       width: 300,
-      height: 400,
+      height: 300,
       cropping: true,
     })
     .then(image => {
@@ -132,7 +141,7 @@ const SetPhotoName = ({ route }) => {
       </View>
 
       <View style={styles.lower}>
-        <TouchableOpacity style={styles.button} onPress={handleSignup}>
+        <TouchableOpacity style={styles.button} onPress={userMail}>
           <Text style={styles.buttonText}> Finish </Text>
         </TouchableOpacity>
 

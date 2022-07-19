@@ -18,7 +18,7 @@ const Home = () => {
     <View>
       <View style={styles.upper}>
         <View style={styles.top}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
             <IconContainer 
               iconName={'align-left'}
             />
