@@ -17,7 +17,7 @@ const DrawerStack = () => {
             screenOptions={{ headerShown: false }} 
             drawerContent={props => <CustomDrawer {...props} />}
         >
-            <Drawer.Screen name="Home" component={HomeNav} />
+            <Drawer.Screen name="HomePage" component={HomeNav} />
         </Drawer.Navigator>
     );
 }
