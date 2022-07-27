@@ -68,7 +68,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDXad8EdmIrRRRf4ihKuWVlRrWcC5wSGus" />
+            android:value="YOUR_API_KEY" />
         <meta-data
             android:name="app_data_collection_default_enabled"
             android:value="true" />

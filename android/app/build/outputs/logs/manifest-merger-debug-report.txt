@@ -269,7 +269,7 @@ ADDED from C:\Users\nklmantey\react-native-travel-app\android\app\src\main\Andro
 meta-data#com.google.android.geo.API_KEY
 ADDED from C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:30:7-33:9
 	android:value
-		ADDED from C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:32:9-64
+		ADDED from C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:32:9-37
 	android:name
 		ADDED from C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:31:9-54
 uses-sdk

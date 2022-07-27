@@ -67,7 +67,7 @@ const SetPhotoName = ({ route }) => {
    renderInner = () => (
     <View style={styles.panel}>
       <View style={{ alignItems: 'center' }}>
-        <Text style={styles.panelTitle}> Upload photo </Text>
+        <Text style={styles.panelTitle}> Upload a photo </Text>
         <Text style={styles.panelSubtitle}> Choose a profile picture </Text>
       </View>
 
@@ -100,7 +100,7 @@ const SetPhotoName = ({ route }) => {
     <View>
       <BottomSheet 
         ref={this.bs}
-        snapPoints={[300, 0]}
+        snapPoints={[315, 0]}
         initialSnap={1}
         callbackNode={this.fall}
         enabledGestureInteraction={true}
@@ -224,12 +224,12 @@ const styles = StyleSheet.create({
   panelButton: {
     backgroundColor: 'black',
     width: 0.9 * SCREENWIDTH,
-    height: 0.05 * SCREENHEIGHT,
+    height: 0.055 * SCREENHEIGHT,
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    borderRadius: 15,
-    marginTop: 10
+    borderRadius: 10,
+    marginTop: 15
 
   },
 

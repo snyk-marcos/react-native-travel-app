@@ -131,8 +131,8 @@
 69-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:30:7-33:9
 70            android:name="com.google.android.geo.API_KEY"
 70-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:31:9-54
-71            android:value="AIzaSyDXad8EdmIrRRRf4ihKuWVlRrWcC5wSGus" />
-71-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:32:9-64
+71            android:value="YOUR_API_KEY" />
+71-->C:\Users\nklmantey\react-native-travel-app\android\app\src\main\AndroidManifest.xml:32:9-37
 72        <meta-data
 72-->[:react-native-firebase_app] C:\Users\nklmantey\react-native-travel-app\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-13:36
 73            android:name="app_data_collection_default_enabled"
