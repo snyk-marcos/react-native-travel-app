@@ -136,12 +136,12 @@ const styles = StyleSheet.create({
 
   IconContainer: {
     backgroundColor: 'black',
-    width: SCREENHEIGHT/10,
+    width: 50,
     alignItems: 'center',
     justifyContent: 'center',
-    height: SCREENHEIGHT/13,
+    height: 50,
     marginTop: 20,
-    borderRadius: 15,
+    borderRadius: 200,
     borderWidth: 1,
     borderColor: 'gray',
   },
