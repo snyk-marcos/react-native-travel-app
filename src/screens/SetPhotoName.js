@@ -148,9 +148,7 @@ const SetPhotoName = ({ route }) => {
           <Text style={styles.loginText}> Already have an account? </Text>
 
           <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-            <Text style={[styles.loginText,  {
-              fontFamily: 'AlongSansExtraBold',
-            }]}> Log in </Text>
+            <Text style={[styles.loginText,  {fontFamily: 'AlongSansExtraBold'}]}> Log in </Text>
           </TouchableOpacity>
         </View>
       </View>

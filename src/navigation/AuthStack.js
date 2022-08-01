@@ -38,7 +38,7 @@ const AuthStack = () => {
 
   return (
     <Stack.Navigator
-        initialRouteName={routeName}
+        initialRouteName="Welcome"
         screenOptions={{
             headerShown: false
         }}
