@@ -1,6 +1,9 @@
 # Travel App
 <p>An app that recommmends popular tourist destinations to users based on specified categories.</p>
 
+<h2>Update</h2>
+Disabled both email provider and Google sign-in provider from Firebase, due to the amount of unwanted test emails in my console. You'll have to manually set up Firebase in your project to be able to carry out user authentication. Thanks :)
+
 <h2>Technologies Used</h2>
 <li>React Native</li>
 <li>Firebase for the backend</li>
